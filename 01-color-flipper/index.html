@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper || Simple</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h4>color flipper</h4>
+        <ul class="nav-links">
+          <li><a href="index.html">Choose from list of colors</a></li>
+          <li><a href="hex.html">Hex generator</a></li>
+        </ul>
+      </div>
+      <div>
+
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>Background color: 
+          <span class="color">#ebf7ff</span>
+        </h2>
+        <button class="btn btn-hero" id="btn">Randomise</button>
+      </div>
+    </main>
+    <footer class="container">
+      <h3>Improvements</h3>
+      <p>I wanted to ensure that the random selector doesn't pick the same index twice, so looked up a way to do this using a conditional, flag variable and while loop.</p>
+      <p>Demo from research can be found <a href="https://jsfiddle.net/xLjs9nca/">
+        here
+      </a>
+    </p>
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
