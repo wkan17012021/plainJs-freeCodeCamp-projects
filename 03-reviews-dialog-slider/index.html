@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews Dialog Slider</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <!-- title -->
+        <div class="title">
+          <h2>our reviews</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- review -->
+        <article class="review">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1515180274303-4dcdee740c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80"
+              id="person-img"
+              alt="avatar image of woman in white hat and red bomber jacket in cityscape background"
+            />
+          </div>
+          <h4 id="author">Leslie Knope</h4>
+          <p id="job">UX/UI Designer</p>
+          <p id="info">
+            Specialises in community-led projects such as parks, recreation and
+            grassroots initiatives
+          </p>
+          <!-- prev next buttons-->
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- random button -->
+          <button class="random-btn">surprise me</button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Managed to complete this mini-app independently i.e without watching the
+        video guide. It helps that the previous two projects builds on this one
+        though
+      </p>
+      <h3>My method</h3>
+      <p>
+        Grab a node list and iterate through them using <code>forEach</code> to
+        add event listeners to the forwards and backwards buttons.
+      </p>
+      <p>
+        Use <code>event.currentTarget</code> to ascertain the button that was
+        clicked and append <code>classList.contains</code> to reveal the list of
+        classnames and query if the specific class exists.
+      </p>
+      <p>
+        Used conditionals to increment or decrement a counter variable which
+        also served as the data array index position.
+      </p>
+      <p>
+        Cleaned up the code to have a function that sets the image element
+        attributes and textContent by feeding the counter variable as the data
+        array index position.
+      </p>
+      <h3>Improvements</h3>
+      <p>
+        There is still some very similar if/else conditionals - perhaps these
+        could be encapsulated.
+      </p>
+      <p>
+        When you click the Surprise Me button, you could be returned the same
+        person if the randomly generated ID is duplicated. In the color flipper
+        app, we used two flag variables to compare previous Index with new
+        Index. If they are the same, rerun the randomiser function. This seems
+        like the same solution.
+      </p>
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

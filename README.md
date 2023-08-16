@@ -10,3 +10,4 @@ His repo can be found [here](https://github.com/john-smilga/javascript-basic-pro
 
 - **Color Flipper 🌈** : randomly generates a background colour either from a predefined list or randomly generates on the fly a hex code combination. Learn about DOM manipulation.
 - **Counter App 🧮**: increase, decrease, reset features. Learn about state management.
+- **Reviews Dialog Slider 🌠**: slider buttons to move the dialog forward and reverse. Randomiser button. State management.
