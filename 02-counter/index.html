@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Counter App!</h1>
+        <span id="value">0</span>
+        <div class="button-container">
+          <button class="btn decrease">-</button>
+          <button class="btn reset">Reset</button>
+          <button class="btn increase">+</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        John's solution was more succinct. I added individual functions and
+        event listeners to assign the button features.
+      </p>
+      <p>
+        It would have been more concise (D-R-Y) to use querSelectorAll for all
+        buttons using a shared class, loop over them to identify which button
+        was clicked and apply the appropriate functionality.
+      </p>
+      <p>Check out his source code for how he solved this issue:</p>
+      <ol>
+        <li>
+          Using querySelectorAll to grab all elements with btn classname. Note
+          that a nodelist is returned which is array-like, and affords limited
+          manipulation methods like forEach() which he uses to iterate over.
+        </li>
+        <li>
+          Now we can pass in to the call back function, on each button, attach
+          an event listener of type 'click'.
+        </li>
+        <li>
+          He then identifies which button was clicked but interrogating the
+          event object by logging e.currentTarget.
+        </li>
+        <li>
+          With currentTarget, you then have access to the classlist via
+          e.currentTarget.classList
+        </li>
+        <li>Use an if/else statement to check if the variable saved to e.currentTarget.classList contains a 'decrease', 'reset', 'increase' class, then apply the appropriate functionality </li>
+      </ol>
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
