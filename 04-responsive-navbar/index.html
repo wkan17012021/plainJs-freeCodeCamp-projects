@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./logo.svg" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <footer>
+      <p>
+        Wasn't initially sure how to do this as it seems this could be done with
+        css and media queries? Set classnames for the list items to
+        <code>display none</code>for mobile - <code>display block</code>for
+        tablet / desktop?
+      </p>
+      <p>
+        Watching the first minute or so into the video, John eludes to toggling
+        the show-links classname on and off when the breakpoint for mobile is
+        reached using js to trigger the styling.
+      </p>
+      <p>
+        I went ahead and tried this by searching for the event type "resize"
+        which you can listen on the window obj. Then create a function that
+        fires but first calculates the viewer's browser width with
+        <code>document.documentElement.clientWidth</code>
+      </p>
+      <p>
+        Compare this value against the sm breakpoint of 800px, if its less than
+        this then toggle the classname with
+        <code>element.classList.toggle("show-links")</code> In fact, this was a
+        misunderstanding of the project requirements. The mobile menu should
+        only be toggled at small breakpoint if the user clicks on the hamburger
+        icon. This can be achieved with
+        <code>classList.toggle("show-links")</code>. Nonetheless, this app gave
+        me the opportunity to explore window.resize
+      </p>
+      <h3>Improvements</h3>
+      <p>
+        I noticed that the resizing browser is laggy because the event is being
+        fired everytime the browser is resized. Even slight changes in the
+        mobile breakpoint causes the mobile nav to re-render creating a janky
+        UX.
+      </p>
+      <p>
+        Some suggestions to throttle or debounce the event listener can be found
+        <a
+          href="https://bencentra.com/code/2015/02/27/optimizing-window-resize.html"
+          >here</a
+        >
+      </p>
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
