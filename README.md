@@ -13,3 +13,4 @@ His repo can be found [here](https://github.com/john-smilga/javascript-basic-pro
 - **Reviews Dialog Slider 🌠**: slider buttons to move the dialog forward and reverse. Randomiser button. State management.
 - **Responsive Navbar🧭**: most of this is css controlled responsive design. It contains a hamburger icon on mobile which toggles the mobile menu.
 - **Sidebar toggle 📤 📥**: similar to before, toggling some markup on and off canvas by switching a classname on and off.
+- **Basic Modal 💬**: similar to before, toggling some styles in a classname on and off using button event listeners. Added bg-image switch.
