@@ -14,3 +14,4 @@ His repo can be found [here](https://github.com/john-smilga/javascript-basic-pro
 - **Responsive Navbar🧭**: most of this is css controlled responsive design. It contains a hamburger icon on mobile which toggles the mobile menu.
 - **Sidebar toggle 📤 📥**: similar to before, toggling some markup on and off canvas by switching a classname on and off.
 - **Basic Modal 💬**: similar to before, toggling some styles in a classname on and off using button event listeners. Added bg-image switch.
+- **Basic Accordion 🪗**: learned to use some event properties I hadn't used before in order to traverse the DOM and trigger the accordion open section when the + icon is clicked. 
