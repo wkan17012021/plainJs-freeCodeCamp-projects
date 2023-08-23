@@ -32,7 +32,8 @@
     <footer>
       <p>
         This one took some time due to thinking you could directly manipulate
-        html video element controls attribute. A quick SO search says otherwise.
+        html video element controls attribute. I was returning the event object
+        but couldn't find the method or property to play or pause the video.
         Eventually I used MDN's useful resource on the video and audio API, to
         hide the default controls and access the play and pause() methods within
         a function using an conditional statement to toggle the states. This
