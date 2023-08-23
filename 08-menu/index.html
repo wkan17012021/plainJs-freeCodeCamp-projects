@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>our menu</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- filter buttons -->
+      <div class="btn-container">
+        <button type="button" class="filter-btn" data-id="all">all</button>
+        <button type="button" class="filter-btn" data-id="Americas">
+          Americas
+        </button>
+        <button type="button" class="filter-btn" data-id="SE Asia">
+          SE Asia
+        </button>
+        <button type="button" class="filter-btn" data-id="Europe">
+          Europe
+        </button>
+        <button type="button" class="filter-btn" data-id="Middle East">
+          Middle East
+        </button>
+      </div>
+      <!-- menu items -->
+      <div class="section-center"></div>
+    </section>
+    <footer>
+      Got stuck on this app and couldn't complete it. The pain points were:
+      <ul>
+        <li>
+          quickly realising I would have to repeat code with
+          <code
+            >document.createElement, classList.add(),
+            document.appendChild()</code
+          >
+          whenever the user clicks on any of the continents buttons
+        </li>
+        <li>
+          John uses innerHTML to inject a load of markup using template literals
+          which was a more succinct way of adding multiple and nested elements
+          which i didn't think of. I refrain from using innerHTML though as i've
+          been told its not particularly safe?
+        </li>
+        <li>
+          I've done a similar app in React and now thankful how much the
+          framework abstracts away all these imperative steps!
+        </li>
+      </ul>
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
