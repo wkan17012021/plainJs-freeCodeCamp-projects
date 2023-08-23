@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <img src="preloader.gif" alt="preloader" class="preloader__item" />
+    </div>
+    <!-- header -->
+    <header>
+      <video controls muted loop class="video-container">
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-lion-head-portrait-in-the-sun-6736-large.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <h1>video project</h1>
+      <!-- video switch -->
+      <button class="switch-btn">
+        <span> play </span>
+        <span> pause </span>
+        <span class="switch"></span>
+      </button>
+    </header>
+    <footer>
+      <p>
+        This one took some time due to thinking you could directly manipulate
+        html video element controls attribute. A quick SO search says otherwise.
+        Eventually I used MDN's useful resource on the video and audio API, to
+        hide the default controls and access the play and pause() methods within
+        a function using an conditional statement to toggle the states. This
+        also toggled the styling for the custom play and pause slider at the
+        bottom.
+      </p>
+      <p>
+        The resource which shows you how to manipulate video controls:
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs"
+          >MDN Docs</a
+        >
+      </p>
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

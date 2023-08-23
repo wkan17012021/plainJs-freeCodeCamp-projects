@@ -14,4 +14,6 @@ His repo can be found [here](https://github.com/john-smilga/javascript-basic-pro
 - **Responsive Navbar🧭**: most of this is css controlled responsive design. It contains a hamburger icon on mobile which toggles the mobile menu.
 - **Sidebar toggle 📤 📥**: similar to before, toggling some markup on and off canvas by switching a classname on and off.
 - **Basic Modal 💬**: similar to before, toggling some styles in a classname on and off using button event listeners. Added bg-image switch.
-- **Basic Accordion 🪗**: learned to use some event properties I hadn't used before in order to traverse the DOM and trigger the accordion open section when the + icon is clicked. 
+- **Basic Accordion 🪗**: learned to use some event properties I hadn't used before in order to traverse the DOM and trigger the accordion open section when the + icon is clicked.
+- **Menu **: Couldn't complete this one in the first attempt and wasn't sure whether using innerHTML is a valid solution to inject a load of content to filter options. Will revisit this to see if there is a more manageable/maintainable solution in the future.
+- **Video Custom Player 🎥**: This was good practice with the video web api. I learned that you have to create your own video controls and you can't manipulate the HTML5 default controls. The app also shows a basic implementation of a loader screen which shows before the whole content is loaded. Useful if the page contains heavy processing such as a video.
