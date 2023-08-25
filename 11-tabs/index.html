@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="title">
+        <h2>about</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+          aperiam!
+        </p>
+      </div>
+
+      <div class="about-center section-center">
+        <article class="about-img">
+          <img
+            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+            alt="boat in lake"
+          />
+        </article>
+        <article class="about">
+          <!-- btn container -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">Tabs</button>
+            <button class="tab-btn" data-id="vision">Explanation</button>
+            <button class="tab-btn" data-id="goals">Drawbacks</button>
+          </div>
+          <div class="about-content">
+            <!-- single item -->
+            <div class="content active" id="history">
+              <h4>Intro</h4>
+              <p>
+                This app is useful as it shows how to connect different groups
+                of elements styling changes triggered by JS. When the tab button
+                is clicked, a style changes occurs across all three buttons.
+                Subsequently, the correct content should also be shown.
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="vision">
+              <h4>Learning Points</h4>
+              <p>
+                The app demonstrates the use of e.target. In bubbling, the event
+                is first triggered on the element that was clicked, and then it
+                bubbles up through its ancestors (parents, grandparents, etc.)
+                until it reaches the root element. target references the element
+                that triggered the event. Note this is subtly different from
+                e.currentTarget, which will always reference what element had
+                the eventlistener attached to - this is your choice what the
+                currentTarget could be.
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="goals">
+              <h4>Difficult to maintain</h4>
+              <p>
+                Requires hard coding markup: section content ids need to match
+                button tab ids, should the project grow.
+              </p>
+            </div>
+            <!-- end of single item -->
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
