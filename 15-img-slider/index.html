@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slide">
+        <img
+          src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+          class="slide-img"
+          alt="competitive cyclists"
+        />
+        <h1>Cycling</h1>
+        <h4>Tour de France</h4>
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.unsplash.com/photo-1626248801379-51a0748a5f96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+          class="slide-img"
+          alt="amateur football players"
+        />
+        <h1>Football</h1>
+        <h4>Five-a-side</h4>
+      </div>
+      <div class="slide">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1600965962102-9d260a71890d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+            class="person-img"
+            alt="Female swimmer"
+          />
+          <h4>250m breaststroke</h4>
+          <h1>Olympics</h1>
+        </div>
+      </div>
+      <div class="slide">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+            class="person-img   "
+            alt="Male golfer teeing off"
+          />
+          <h4>Dustin Johnson</h4>
+          <h1>PGA Golf</h1>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button type="button" class="prevBtn">prev</button>
+      <button type="button" class="nextBtn">next</button>
+    </div>
+    <footer>
+      <h4>How does the slider work?</h4>
+      <ul>
+        <li>
+          Initial state of images are laid on top of each other using position
+          absolute. The div container is position relative.
+        </li>
+        <li>
+          Use overflow hidden to maintain a view area only around the slider
+          container.
+        </li>
+        <li>Initially get all items in a row using style left property.</li>
+        <li>
+          When we click on the buttons, we use transform X property to move the
+          image left or right.
+        </li>
+        <li>Take a look at the setup of the JS for comments</li>
+        <li>
+          Use a count variable to keep track of the index position. Use it to
+          invoke the function controlling the actual carousel movement.
+        </li>
+        <li>
+          The carousel movement uses the forEach to grab all items and move them
+          either right or left using style.transform = template literal for
+          translateX(count var value multipled by 100%)
+        </li>
+        <li>
+          Setup if conditionals to handle how the slider should behave when you
+          get to the end of the list of items or try to click on previous button
+          when you are already at the start of the image list.
+        </li>
+      </ul>
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
